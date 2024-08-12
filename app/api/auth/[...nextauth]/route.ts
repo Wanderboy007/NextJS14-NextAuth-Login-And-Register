@@ -4,7 +4,7 @@ import GithubProvider from "next-auth/providers/github";
 import CredentialsProvider from "next-auth/providers/credentials";
 import GoogleProvider from "next-auth/providers/google";
 import bcrypt from "bcryptjs";
-import User from "@/models/User";
+import User from "@/models/user";
 import connect from "@/utils/db";
 
 export const authOptions: any = {
