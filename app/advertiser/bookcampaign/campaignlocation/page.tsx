@@ -72,7 +72,12 @@ export default function page() {
             />
             <IoFilter />
           </div>
-          <div className="h-[500px] w-[500px] bg-pink-500"></div>
+          {/* <div className="h-[500px] w-[500px] bg-pink-500"></div> */}
+          <img
+            className="h-60 w-full object-cover"
+            src="https://www.independent-software.com/assets/gmap/gmap-tutorial-google-map-provider.jpg"
+            alt=""
+          />
         </div>
         <div className="flex flex-col w-full gap-2 ">
           <div className="flex items-center justify-end gap-2 px-10 m-3">

@@ -41,9 +41,9 @@ export default function Home() {
       <div className="grid grid-cols-3">
         {Locations.map((location) => (
           <div>
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow m-2">
+            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
               <img
-                className="rounded-t-lg"
+                className="rounded-t-lg h-60 w-full object-cover"
                 src="https://placehold.co/400x400"
                 alt=""
               />

@@ -2,6 +2,10 @@
 import React from "react";
 import { usePathname } from "next/navigation";
 import { Md10K } from "react-icons/md";
+import { MdDashboard } from "react-icons/md";
+import { TbTargetArrow } from "react-icons/tb";
+import { MdOutlineDesignServices } from "react-icons/md";
+import { BiSupport } from "react-icons/bi";
 import Link from "next/link";
 
 const sidebarItems = [
@@ -9,7 +13,7 @@ const sidebarItems = [
     name: "Dashboard",
     url: "/advertiser/dashboard",
     icon: (
-      <Md10K className="w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900" />
+      <MdDashboard className="w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900" />
     ),
     userType: "mediaOwner",
   },
@@ -17,7 +21,7 @@ const sidebarItems = [
     name: "Book Campaign",
     url: "/advertiser/bookcampaign/campaignlocation",
     icon: (
-      <Md10K className="w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900" />
+      <TbTargetArrow className="w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900" />
     ),
     userType: "mediaOwner",
   },
@@ -25,7 +29,7 @@ const sidebarItems = [
     name: "Campaign Progress",
     url: "/advertiser/campaignprogress",
     icon: (
-      <Md10K className="w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900" />
+      <MdOutlineDesignServices className="w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900" />
     ),
     userType: "mediaOwner",
   },
@@ -33,7 +37,7 @@ const sidebarItems = [
     name: "Contact Support",
     url: "/advertiser/dashboard",
     icon: (
-      <Md10K className="w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900" />
+      <BiSupport className="w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900" />
     ),
     userType: "mediaOwner",
   },

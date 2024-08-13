@@ -62,21 +62,55 @@ export default function page() {
           </Link>
         </div>
       </div>
-      <form>
-        <label htmlFor="campaignName">Campaign Name:</label>
-        <input type="text" id="campaignName" name="campaignName" />
-        <label htmlFor="cardNumber">Card Number:</label>
-        <input type="text" id="cardNumber" name="cardNumber" />
-        <label htmlFor="expDate">Expiration Date:</label>
-        <input type="text" id="expDate" name="expDate" placeholder="MM/YYYY" />
-        <label htmlFor="locations">Locations:</label>  
-        <input type="text" id="locations" name="locations" />
-        <label htmlFor="designs">Designs:</label>
-        <input type="text" id="designs" name="designs" />
-        <div>
-          <p>I'm not a robot</p>
+      <form className="flex w-full gap-5">
+        <div className="flex flex-col w-full">
+          <div className="flex flex-col m-5">
+            <label htmlFor="campaignName">Campaign Name:</label>
+            <input
+              className="rounded-xl"
+              type="text"
+              id="campaignName"
+              name="campaignName"
+            />
+          </div>
+          <div className="flex flex-col m-5">
+            <div className="flex justify-between">
+              <h1>Location</h1>
+              <Link
+                className="text-blue-500 text-sm"
+                href={"/advertiser/bookcampaign/campaignlocation"}
+              >
+                Edit
+              </Link>
+            </div>
+            <div className="text-lg">Location 112D</div>
+          </div>
+          <div className="flex flex-col m-5">
+            <div className="flex justify-between">
+              <h1>Design</h1>
+              <Link
+                className="text-blue-500 text-sm"
+                href={"/advertiser/bookcampaign/campaigndesign"}
+              >
+                Edit
+              </Link>
+            </div>
+            <div className="h-[80px] w-[80px] bg-pink-500"></div>
+          </div>
         </div>
-        <input type="submit" value="Save" />
+        <div className="flex flex-col gap-5 w-full">
+          <label htmlFor="name">Name:</label>
+          <input className="rounded-xl" type="text" id="name" name="name" />
+          <label htmlFor="email">Email:</label>
+          <input className="rounded-xl" type="Email" id="email" name="email" />
+          <div className="text-center">
+            <input
+              className="bg-black w-1/3 rounded-3xl px-5 py-2 text-white"
+              type="submit"
+              value="Save"
+            />
+          </div>
+        </div>
       </form>
     </div>
   );
